@@ -10,6 +10,8 @@ while (x > 0) | (y > 0):
     if (x % 2) != (y % 2):
         d += 1
     res.append(d)
-    x = int(x / 2)
-    y = int(y / 2)
+    x >>= 1
+    y >>= 1
 print("Hamming distance:", max(res))
+
+
