@@ -17,9 +17,9 @@ mkdir projects
 cd projects
 mkdir environments
 cd environments
-virtualenv python2.7.14
-virtualenv python3.6.3
+virtualenv python3.6.3 --python=$HOME/.pyenv/versions/3.6.3/bin/python
+virtualenv python2.7.14 --python=$HOME/.pyenv/versions/2.7.14/bin/python
 source $HOME/projects/environments/python2.7.14/bin/activate
-pyenv local 2.7.14
+python --version
 source $HOME/projects/environments/python3.6.3/bin/activate
-pyenv local 3.6.3
+python --version
